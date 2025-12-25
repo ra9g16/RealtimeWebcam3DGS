@@ -2,6 +2,8 @@
 
 Webカメラの画像をキャプチャし、AppleのSHARPモデルとMetalSplatterレンダラーを使用してリアルタイムで3D Gaussian Splatsを生成するmacOSアプリケーションです。
 
+![デモ](image/main_app.gif)
+
 ## 必要条件
 
 ### ハードウェア
@@ -19,14 +21,18 @@ Webカメラの画像をキャプチャし、AppleのSHARPモデルとMetalSplat
 ### 1. Python依存パッケージのインストール
 
 ```bash
-# 仮想環境の作成と有効化（MetalSplatterのルートディレクトリから）
+# 仮想環境の作成と有効化
 python3 -m venv venv
 source venv/bin/activate
 
 # 依存パッケージのインストール
-cd ml-sharp/ml-sharp
 pip install -r requirements.txt
+
+# ml-sharpのインストール（別途クローンが必要）
+git clone https://github.com/apple/ml-sharp.git
+cd ml-sharp/ml-sharp
 pip install -e .
+cd ../..
 ```
 
 ### 2. アプリケーションのビルドと実行
