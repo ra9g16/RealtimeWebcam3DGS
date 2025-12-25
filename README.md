@@ -2,7 +2,9 @@
 
 Webカメラの画像をキャプチャし、AppleのSHARPモデルとMetalSplatterレンダラーを使用してリアルタイムで3D Gaussian Splatsを生成するmacOSアプリケーションです。
 
-![デモ](image/main_app.gif)
+![デモ](image/main_app_camera.gif)
+
+![デモ2](image/main_app_static.gif)
 
 ## 必要条件
 
